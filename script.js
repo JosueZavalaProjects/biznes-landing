@@ -30,6 +30,10 @@ allLinks.forEach(function (link) {
       });
     }
 
+    if (href.startsWith("http")) {
+      window.location.href = href;
+    }
+
     // Close mobile navigatoin
     if (link.classList.contains("main-nav-link"))
       headerEl.classList.toggle("nav-open");
